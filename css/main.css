@@ -216,4 +216,27 @@ section.plant-cards figure figcaption h2{
 	cursor: grabbing!important;
 }
 
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+		/* #PADDING */
+
+		main, footer{
+			padding: 1em 2em;
+		}
+
+
+		/* #MAIN */
+		body{
+			width: 100%;
+			margin: 0;
+			border-radius: 30px;
+			box-sizing:border-box;
+			border: none;
+			font-family: 'Open Sans', sans-serif;
+		}
+	}
 
