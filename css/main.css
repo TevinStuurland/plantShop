@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900|Open+Sans:300,400,600,700,800&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+:root{
+	--selected: #292929;
+	--main: #32A060;
+	--unselected: #D4D4D4;
+	--light: #F7F7F7;
+	--dark-text: #CBCBCB;
+	--menu-emphasis: #EEEEEE;
+}
+
+h1, h2, h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+/* #MAIN */
+body{
+	width: 320px;
+	margin: 8vh auto;
+	border-radius: 30px;
+	box-sizing:border-box;
+	border: 1px solid var(--unselected);
+	font-family: 'Open Sans', sans-serif;
+}
+
+header, section{
+	padding: 1em 2em;
+}
+
+header{
+	margin-top: 1em;
+}
+
+main nav{
+	margin: 30px 0 15px 0;
+}
+
+main nav ul li a{
+	transition: 1s;
+	font-weight:600;
+	text-decoration: none;
+	color: var(--unselected);
+}
+
+main nav ul li a.selected{
+	color: var(--selected);
+}
+
+main nav ul li a:hover{
+	transition: 1s;
+	color: var(--selected);
+}
+
+ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+
+/* #HEADER */
+header ul li{
+	font-size: 25px;
+}
+
+header ul li:nth-child(2n) {
+	width: 20px;
+	padding: 15px;
+	margin-top: -13px;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: var(--menu-emphasis);
+}
+
+header ul li a{
+	transition: 1s;
+	text-decoration: none;
+	color: var(--unselected);
+}
+
+header ul li a:hover{
+	transition: 1s;
+	color: var(--selected);
+}
+
+/* #CARDS */
+h1{
+	font-weight: 300;
+	font-size: 30px;
+}
+
+section.plant-cards {
+	padding: 0em;
+	display: flex;
+	overflow-x: hidden;
+	cursor: grab;
+}
+
+section.plant-cards figure{
+	padding: 1em;
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin: 0 30px;
+	flex-basis: 200px;
+	border-radius: 15px;
+	background-color: var(--main);
+}
+
+section.plant-cards figure:nth-child(1n+2){
+	opacity: 0.4;
+	transition: .5s;
+	margin-left: 0;
+}
+
+section.plant-cards figure:nth-child(1n+2):after {
+  content: "";
+  display: block;
+  position: relative;
+	right: -40px;
+  height: 1px;
+}
+
+section.plant-cards figure:nth-child(1n+2):hover{
+	opacity: 1;
+	transition: .5s;
+}
+section.plant-cards figure .detail-button{
+	width: 25px;
+	display: block;
+	transition: .2s;
+	margin-left: auto;
+	margin-top: -40px;
+	text-align: center;
+	padding: 10px 10px;
+	border-radius: 15px;
+	background-color: var(--selected);
+}
+
+section.plant-cards figure a {
+	font-size: 22px;
+	transition: .2s;
+	color: var(--light);
+	text-decoration: none;
+}
+
+section.plant-cards figure .detail-button:hover{
+	transition: .2s;
+	color: var(--selected);
+	background-color: var(--light);
+}
+
+section.plant-cards figure .detail-button:hover > a{
+	transition: .2s;
+	color: var(--selected);
+}
+
+section.plant-cards figure .plant-price{
+	text-align: right;
+	color: var(--light);
+}
+
+section.plant-cards figure .plant-price p{
+	opacity: 0.4;
+	margin: 5px 0;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+section.plant-cards figure .plant-price h2{
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+section.plant-cards figure figcaption{
+	color: var(--light);
+}
+
+section.plant-cards figure figcaption p{
+	opacity: 0.4;
+	margin: 5px 0;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+section.plant-cards figure figcaption h2{
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+/* #DESCRIPTION */
+.plant-description h3{
+	margin: 20px 0;
+	font-size: 20px;
+}
+
+.plant-description p{
+	font-size: 12px;
+	line-height: 2em;
+	margin-bottom: 2em;
+	color: var(--dark-text);
+}
+
+/* #STATES */
+.active{
+	cursor: grabbing!important;
+}
+
+

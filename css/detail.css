@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,900|Open+Sans:300,400,600,700,800&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+:root{
+	--main: #32A060;
+	--light: #F7F7F7;
+	--selected: #292929;
+	--main-dark:#49A970;
+	--dark-text: #CBCBCB;
+	--unselected: #D4D4D4;
+	--menu-emphasis: #EEEEEE;
+}
+
+h1, h2, h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+img{
+	max-width: 120%;
+}
+
+/* #PADDING */
+
+main, footer{
+	padding: 1em 2em;
+	border-radius: 30px;
+}
+
+
+/* #MAIN */
+body{
+	width: 320px;
+	margin: 8vh  auto;
+	border-radius: 30px;
+	box-sizing:border-box;
+	border: 1px solid var(--unselected);
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	font-weight: 300;
+	font-size: 30px;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+h3{
+	font-size: 25px;
+	font-weight: 300;
+}
+
+main{
+	height:30vh;
+	background-color: var(--main);
+}
+
+ul{
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+main figure {
+	display:flex;
+	justify-content: space-between;
+}
+
+main figure img{
+	margin: -15px 0 0 -50px;
+}
+
+/* #HEADER */
+header{
+	margin-top: 1em;
+}
+
+header ul li{
+	font-size: 25px;
+}
+
+header ul li:nth-child(2n) {
+	width: 20px;
+	padding: 15px;
+	font-size: 16px;
+	transition: .5s;
+	margin-top: -12px;
+	text-align: center;
+	border-radius: 30px;
+	background-color: var(--main-dark);
+}
+
+header ul li a{
+	transition: .5s;
+	color: var(--light);
+	text-decoration: none;
+}
+
+header ul li a:hover{
+	transition: .5s;
+	color: var(--main-dark);
+}
+
+header ul li:nth-child(2n):hover {
+	transition: .5s;
+	background-color: var(--light);
+}
+
+header ul li:nth-child(2n):hover > a{
+	transition: .2s;
+	color: var(--main);
+}
+
+main .plant-price{
+	text-align: left;
+	color: var(--light);
+}
+
+main .plant-price p{
+	opacity: 0.4;
+	margin: 5px 0;
+	font-size: 10px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+main .plant-price h2{
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.smaller{
+	margin-top: 30px;
+}
+
+.smaller p{
+	font-weight: 200;
+	font-size: 9px!important;
+}
+
+.smaller h2{
+	font-weight: 200;
+	font-size:16px!important;
+}
+
+/* #FOOTER */
+footer{
+	margin-top: 50px;
+}
+
+footer p{
+	font-size: 12px;
+	line-height: 2em;
+	margin: 2.5em 0;
+	color: var(--dark-text);
+}
+
+footer p a{
+	text-decoration: none;
+	transition: .2s;
+	font-weight: 600;
+	color: var(--main-dark);
+}
+
+footer p a:hover{
+	transition: .2s;
+	color: var(--main);
+}
