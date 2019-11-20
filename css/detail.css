@@ -172,27 +172,30 @@ footer p a:hover{
 	color: var(--main);
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-		/* #PADDING */
+/* #RESPONSIVE */
+@media only screen and (max-width: 480px) {
+	/* #MAIN */
+	body{
+		margin: 0;
+		width: 100%;
+		border: none;
+		font-family: 'Open Sans', sans-serif;
+	}
 
-		main, footer{
-			padding: 1em 2em;
-		}
+	main{
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
 
+	main figure img {
+    margin: -65px 0 0 -30px;
+	}
 
-		/* #MAIN */
-		body{
-			width: 100%;
-			margin: 0;
-			border-radius: 30px;
-			box-sizing:border-box;
-			border: none;
-			font-family: 'Open Sans', sans-serif;
-		}
+	img {
+		max-width: 100%;
+	}
 
-}
+	.smaller {
+    margin-top: 15px;
+	}
+};
